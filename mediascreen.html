@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: blue;
+            box-sizing: border-box;
+        }
+        .geral
+        {
+            background-color: skyblue;
+            width: 600px;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            flex-direction: row;
+        }
+        
+        @media screen and (min-width: 600px) and (max-width: 900px)
+        {
+            .geral
+            {
+                flex-direction: column;
+            }
+        }
+        .quadrados
+        {
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="geral">
+        <div class="quadrados"></div>
+        <div class="quadrados"></div>
+        <div class="quadrados"></div>
+    </div>
+</body>
+</html>
+
